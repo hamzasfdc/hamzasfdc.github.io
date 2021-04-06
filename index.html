@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+ <body>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>  
+<script src="http://hamzadev-dev-ed.lightning.localhost.soma.force.com:6109/lightning/lightning.out.js"></script>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+<div ng-bind-html="rawHtml">{{myWelcome}}</div>
+
+</div>
+<div id="lightning">
+  </div>
+  <script>
+            $Lightning.use("c:testLODependencyApp", function() {
+              $Lightning.createComponent("c:testAuraLwcContinuation", 
+              { },
+              "lightning",
+              function(cmp) {
+                // do some stuff
+              });
+            },
+
+         'http://hamzadev-dev-ed.lightning.localhost.soma.force.com:6109' // Community endpoint
+        );                   
+
+</script>   
+</body>
+</html>
