@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <body>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>  
+<script src="http://hahmed-wsm.internal.salesforce.com:6109/lightning/lightning.out.js"></script>
+
+<a href="index.html">steam</a>
+
+<div id="lightning">
+</div>
+<script>
+            $Lightning.use("c:LODependencyApp", function() {
+              $Lightning.createComponent("c:testAuraLwcContinuation", 
+              { },
+              "lightning",
+              function(cmp) {
+                // do some stuff
+              });
+            },
+
+         'http://hahmed-wsm.internal.salesforce.com:6109',
+         '00Dxx0000006Gmd!AQEAQGSLtVyDd6gC.ICtIDVQDhvLOQ7WInbVuN145r90Y7oiw5XKSq2FMgdm5YKv496HFV6rSq7Xw8QyCo_wCsrr2kq1la.T'
+        );                   
+
+</script>   
+</body>
+</html>
